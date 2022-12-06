@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+name: ado-wait-task-completed-job
+
+trigger:
+- none
+
+pool:
+  vmImage: ubuntu-latest
+
+jobs:
+  - job: waitforcompletedjob
+    pool: server
+    timeoutInMinutes: 0
+    steps:
+      - 
+- task: AMLJobWaitTask@0
+  inputs:
+    azureSubscription: 'kritifaujdar-ws-level'
+    runName: 'jovial_spring_kzlkxt7s1m'
