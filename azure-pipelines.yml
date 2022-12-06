@@ -71,4 +71,4 @@ jobs:
   - task: AMLJobWaitTask@0
     inputs:
       azureSubscription: 'kritifaujdar-ws-level'
-      runName: 'run_name'
+      runName: $(run_name_from_submit_job)
