@@ -9,13 +9,13 @@ trigger: none
 
 variables:
   - name: resource_group
-    value: Notification-master
+    value: kritifaujdar-rg
   - name: subscription
     value: ea4faa5b-5e44-4236-91f6-5483d5b17d14
   - name: workspace
-    value: Notification-WestCentralUs
+    value: kritifaujdar-ws
   - name: azure_service_connection
-    value: 'WestCentralUS Workspace Connection'
+    value: 'kritifaujdar-ws-level'
 
 jobs:
 - job: SubmitAMLJob
