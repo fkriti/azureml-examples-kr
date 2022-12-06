@@ -5,8 +5,7 @@
 
 name: ado-wait-task-completed-job
 
-trigger:
-- none
+trigger: none
 
 pool:
   vmImage: ubuntu-latest
@@ -16,8 +15,7 @@ jobs:
     pool: server
     timeoutInMinutes: 0
     steps:
-      - 
-- task: AMLJobWaitTask@0
-  inputs:
-    azureSubscription: 'kritifaujdar-ws-level'
-    runName: 'jovial_spring_kzlkxt7s1m'
+    - task: AMLJobWaitTask@0
+      inputs:
+        azureSubscription: 'kritifaujdar-ws-level'
+        runName: 'jovial_spring_kzlkxt7s1m'
