@@ -48,7 +48,7 @@ jobs:
       
         # Create temp component yaml
         touch component.yml
-        printf "\$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json\ncommand: sleep 2m\ncompute: cpu-cluster\nenvironment:\n  image: library/python:latest\n" > component.yml
+        printf "\$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json\ncommand: sleep 2m\ncompute: centralus-cpu-cluster\nenvironment:\n  image: library/python:latest\n" > component.yml
         cat component.yml
 
         # submit component job and get the run name
